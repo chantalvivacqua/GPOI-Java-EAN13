@@ -1,17 +1,35 @@
+/**
+ * classe che controlla la validità di un codice EAN13
+ * @author Vivacqua ida Chantal
+ * @version 0.1
+ * @since 10/05/2023
+ */
+
 public class EAN13 {
     
     private String codice;
 
+    /**
+     * metodo per assegnare un valore da parametro al codice
+     * @param c stringa rappresentante il codice ean13
+     */
    
     public void setCodice(String c){
         codice = c;
     }
 
+    /**
+     * metodo per ottenere il codice
+     * @return il codice ean13
+     */
     public String getCodice(){
         return codice;
     }
 
-
+    /**
+     * metodo che veerifica la correttezza di un codice ean13 secondo le regole di controllo specifiche ad esso
+     * @return cifra di controllo per assicurare la correttezza
+     */
     public boolean verificaCodice(){
 
         // Verifica se l'attributo codice è vuoto o nullo
